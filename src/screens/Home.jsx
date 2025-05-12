@@ -1,4 +1,3 @@
-import React from "react";
 import "./Home.css";
 import a1 from "../assets/mypic.jpg";
 import b1 from "../assets/bus_logo.jpg";
@@ -244,7 +243,7 @@ const Home = () => {
               <FaInstagram />
             </a>
             <a
-              href="https://facebook.com/your_facebook_id"
+              href="https://facebook.com/kamalesh2301"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
