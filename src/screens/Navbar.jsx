@@ -2,6 +2,7 @@ import "./Navbar.css";
 import { MdMenu } from "react-icons/md";
 import { useState } from "react";
 import useWindowWidth from "../hooks/useWindowwidth";
+import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   const [showmenu,setShowmenu] = useState(false);
@@ -49,9 +50,15 @@ const Navbar = () => {
         </ul>
       </div>
       {width <= 768 && <ul className={`montserrat-text1`}>
-    <li onClick={() => setShowmenu(!showmenu)}>
-      <MdMenu />
-    </li>
+    <li onClick={() => setShowmenu(!showmenu)} className="menu-toggle">
+  <span className={`icon ${showmenu ? 'hide' : 'show'}`}>
+    <MdMenu />
+  </span>
+  <span className={`icon ${showmenu ? 'show' : 'hide'}`}>
+    <IoClose />
+  </span>
+</li>
+
   </ul> }
   
 
@@ -75,7 +82,9 @@ const Navbar = () => {
           </li>
           <li>
             {" "}
-            <a href="#skill" style={{ textDecoration: "none", color: "#000" }}>
+            <a href="#skill" style={{ textDecoration: "none", color: "#000" }}
+                          onClick={()=>{setShowmenu(!showmenu)}}
+>
               Skill
             </a>
           </li>
