@@ -77,19 +77,19 @@ const Home = () => {
               <table>
                 <tr>
                   <td>
-                    <b> Date of Birth : </b>
+                    <b> D.O.B: </b>
                   </td>
                   <td>23-01-2004</td>
                 </tr>
                 <tr>
                   <td>
-                    <b> Phone :</b>
+                    <b> Phone: </b>
                   </td>
                   <td>8220696132</td>
                 </tr>
                 <tr>
                   <td>
-                    <b> Degree : </b>
+                    <b> Degree: </b>
                   </td>
                   <td>Bachelor of Engineering</td>
                 </tr>
@@ -99,19 +99,19 @@ const Home = () => {
               <table>
                 <tr>
                   <td>
-                    <b> Age : </b>
+                    <b> Age:  </b>
                   </td>
                   <td>21</td>
                 </tr>
                 <tr>
                   <td>
-                    <b> Email : </b>
+                    <b> Email:  </b>
                   </td>
                   <td>skamalesh2301@gmail.com</td>
                 </tr>
                 <tr>
                   <td>
-                    <b> Major : </b>
+                    <b> Major: </b>
                   </td>
                   <td>Computer Science</td>
                 </tr>
