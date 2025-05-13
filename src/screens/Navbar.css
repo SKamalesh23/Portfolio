@@ -18,6 +18,22 @@ body {
   font-size: 1.5rem;
   padding: 0.8rem;
 }
+.montserrat-text1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: #7F55B1;
+  background: linear-gradient(180deg, rgba(127, 85, 177, 1) 0%, rgba(127, 85, 177, 1) 50%, rgba(84, 45, 145, 1) 100%);  list-style: none;
+  display: none;
+  gap: 1rem;
+  color: white;
+  height: 1.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+}
 
 .montserrat-text li {
   position: relative;
@@ -39,7 +55,74 @@ body {
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
 }
-
+.montserrat-text1 li{
+  padding: 0.5rem;
+}
+.montserrat-text1 li:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  /* padding: 1rem; */
+}
 .montserrat-text li:hover::after {
   transform: scaleX(1);
+}
+.mobile{
+  display: flex;
+  width: 200px;
+  opacity: 0;
+  background-color: #fff;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  position: fixed;
+  transform: translateX(-10px);
+
+  z-index: 1000;
+  height: 100vh;
+  top: 0;
+  /* margin-top: 0 auto; */
+  /* justify-content: center; */
+  /* align-items: start; */
+}
+.mobile.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.text-mob{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 2rem;
+  /* padding: 2rem; */
+  /* justify-content: center; */
+  align-items: start;
+  /* position: fixed; */
+}
+.text-mob li {
+  padding: 1rem 2.5rem; /* Add this so hover doesn't increase padding */
+  transition: background-color 0.3s ease;
+  /* border: 1px solid red; */
+  width: 119px;
+  /* left: */
+}
+.text-mob li:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  /* width: 200px; */
+  left: -1000px;
+  /* border: ; */
+ 
+}
+@media (max-width:768px){
+  .montserrat-text{display: none;}
+}
+ .montserrat-text1{
+    display: flex;
+  }
+@media (max-width:480px){
+  .montserrat-text{
+    display: none;
+  }
+  .montserrat-text1{
+    display: flex;
+  }
 }

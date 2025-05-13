@@ -59,7 +59,7 @@ const Home = () => {
     <div>
       <div className="Home"></div>
       <section id="about" className="about">
-        <div>
+        <div className="Image">
           {" "}
           <img src={a1} alt="My Image" height="300px" id="myImage" />
         </div>

@@ -74,6 +74,7 @@
 #myImage {
   box-shadow: 4px 2px 4px 4px rgba(0, 0, 0, 0.2);
 }
+
 .montserrat-skills {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -239,9 +240,20 @@ display: inline-block;
 }
 /* ------------------------- Responsive CSS ------------------------- */
 @media (max-width: 768px) {
+    .Image{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
   .about {
     flex-direction: column;
     padding: 2rem 1rem;
+     td:first-child{
+      font-size: 1.1rem;
+    }
+    td:nth-child(2){
+      font-size: 1rem;
+    }
   }
 .Home{
   display: none;
@@ -312,6 +324,22 @@ display: inline-block;
 }
 
 @media (max-width: 480px) {
+   .Image{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+  .about{
+    td{
+      font-size: 0.8 rem;
+    }
+    td:first-child{
+      font-size: 100px;
+    }
+    td:nth-child(2){
+      font-size: 0.7rem;
+    }
+  }
   .card-title {
     font-size: 1rem;
   }
