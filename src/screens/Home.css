@@ -55,7 +55,7 @@
 }
 .para {
   font-size: 20px;
-  color: black;
+  color: #ffeb3b;
   padding-top: 1rem;
   max-width: 800px;
   text-align: justify;
@@ -72,7 +72,8 @@
   margin-bottom: 2px;
 }
 #myImage {
-  box-shadow: 4px 2px 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 2px 4px 4px rgba(255, 255, 255, 0.2);
+  border-radius: 10%;
 }
 
 .montserrat-skills {
@@ -125,6 +126,7 @@
   color: #7f55b1;
   text-decoration: underline;
   text-align: center;
+  /* font-weight: bold; */
 }
 .projects{
   text-align: center;
