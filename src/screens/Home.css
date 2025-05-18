@@ -35,8 +35,7 @@
   );
   color: white;
   justify-content: space-around;
-  animation: FadeIn linear;
-  animation-timeline: view(90% auto) ;
+ 
   td {
     padding: 15px;
     font-size: 1.5rem;
@@ -52,11 +51,15 @@
   }
 }
 @keyframes FadeIn {
-  from{
+  0%{
     opacity: 0.5;
-    transform: translateY(100px) scale(0.8);
+    transform: translateY(0px) scale(1);
   }
-  to{
+  50%{
+    opacity: 0.8;
+    transform: translateY(0px) scale(0.8);
+  }
+  100%{
     opacity: 1;
     transform: translateY(0) scale(1);
   }
@@ -158,8 +161,7 @@
   text-align: center;
   padding: 2rem;
    min-height: 50vh;
-   animation: BlurIn linear;
-  animation-timeline: view(50% auto) ;
+  
 }
 @keyframes BlurIn {
   0%{
@@ -225,6 +227,8 @@ display: inline-block;
   box-shadow: 0 4px 12px #7f55b1;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
+   animation: BlurIn linear;
+  animation-timeline: view(80% auto) ;
 }
 
 .card:hover {
