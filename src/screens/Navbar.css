@@ -8,8 +8,14 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background: #7F55B1;
-  background: linear-gradient(180deg, rgba(127, 85, 177, 1) 0%, rgba(127, 85, 177, 1) 50%, rgba(84, 45, 145, 1) 100%);  list-style: none;
+  background: #7f55b1;
+  background: linear-gradient(
+    180deg,
+    rgba(127, 85, 177, 1) 0%,
+    rgba(127, 85, 177, 1) 50%,
+    rgba(84, 45, 145, 1) 100%
+  );
+  list-style: none;
   display: flex;
   gap: 1rem;
   color: white;
@@ -23,10 +29,15 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background: #7F55B1;
-  background: linear-gradient(180deg, rgba(127, 85, 177, 1) 0%, rgb(126, 82, 180) 50%, rgb(84, 43, 150) 100%); 
-  
-   list-style: none;
+  background: #7f55b1;
+  background: linear-gradient(
+    180deg,
+    rgba(127, 85, 177, 1) 0%,
+    rgb(126, 82, 180) 50%,
+    rgb(84, 43, 150) 100%
+  );
+
+  list-style: none;
   display: none;
   gap: 1rem;
   color: white;
@@ -43,7 +54,6 @@ body {
   cursor: pointer;
 }
 
-
 /* Animated underline */
 .montserrat-text li::after {
   content: "";
@@ -57,7 +67,7 @@ body {
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
 }
-.montserrat-text1 li{
+.montserrat-text1 li {
   padding: 0.5rem;
 }
 
@@ -69,12 +79,10 @@ body {
   width: 30px; /* or whatever width fits both icons */
   height: 30px;
   cursor: pointer;
-  padding:1rem;
- 
+  padding: 1rem;
 }
 
 .menu-toggle .icon {
- 
   position: absolute;
   padding: 1rem;
   top: 0;
@@ -96,7 +104,7 @@ body {
   z-index: 0;
 }
 
-.mobile{
+.mobile {
   display: none;
   width: 200px;
   opacity: 0;
@@ -118,8 +126,9 @@ body {
   z-index: 1000;
   transform: translateY(0);
   pointer-events: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.text-mob{
+.text-mob {
   display: flex;
   list-style: none;
   flex-direction: column;
@@ -136,27 +145,28 @@ body {
   width: 119px;
   /* left: */
 }
-.text-mob li:hover{
+.text-mob li:hover {
   background-color: rgba(0, 0, 0, 0.2);
   /* width: 200px; */
   left: -1000px;
   /* border: ; */
- 
 }
-@media (max-width:768px){
-  .montserrat-text{display: none;}
-}
- .montserrat-text1{
-    display: flex;
-  }
-@media (max-width:480px){
-  .montserrat-text{
+@media (max-width: 768px) {
+  .montserrat-text {
     display: none;
   }
-  .montserrat-text1{
+}
+.montserrat-text1 {
+  display: flex;
+}
+@media (max-width: 480px) {
+  .montserrat-text {
+    display: none;
+  }
+  .montserrat-text1 {
     display: flex;
   }
-  .mobile{
+  .mobile {
     display: flex;
     /* z-index: -999; */
   }

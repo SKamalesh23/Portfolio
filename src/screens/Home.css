@@ -35,6 +35,8 @@
   );
   color: white;
   justify-content: space-around;
+  animation: FadeIn linear;
+  animation-timeline: view(90% auto) ;
   td {
     padding: 15px;
     font-size: 1.5rem;
@@ -48,6 +50,17 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
   }
+}
+@keyframes FadeIn {
+  from{
+    opacity: 0.5;
+    transform: translateY(100px) scale(0.8);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  
 }
 .tables {
   display: flex;
@@ -74,6 +87,17 @@
 #myImage {
   box-shadow: 4px 2px 4px 4px rgba(255, 255, 255, 0.2);
   border-radius: 10%;
+  animation: Imshift 1s ease-in-out forwards;
+  animation-timeline: view(90% auto);
+}
+@keyframes Imshift {
+  from{
+    transform: rotateX(180deg) translateX(-200px);
+  }
+  to{
+    transform: rotateX(0deg) translateX(0px);
+  }
+  
 }
 
 .montserrat-skills {
@@ -101,6 +125,8 @@
 .skill {
   margin-bottom: 20px;
   font-weight: bold;
+  animation: FadeIn linear;
+  animation-timeline: view(50% auto);
 }
 
 .progress-container {
@@ -131,7 +157,21 @@
 .projects{
   text-align: center;
   padding: 2rem;
-   min-height: 50vh
+   min-height: 50vh;
+   animation: BlurIn linear;
+  animation-timeline: view(50% auto) ;
+}
+@keyframes BlurIn {
+  0%{
+    filter: blur(40px);
+  }
+  45%,55%{
+    filter: blur(0px);
+  }
+  100%{
+    filter: blur(0px);
+  }
+  
 }
 .montserrat-project {
   font-family: "Montserrat", sans-serif;
